@@ -1,0 +1,8 @@
+{
+  "name": "BeautyStyles Jewels",
+  "description": "A complete, production-ready e-commerce website for a premium jewellery brand supporting online and offline payments.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

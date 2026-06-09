@@ -1,0 +1,176 @@
+export type MetalType = 'Gold' | 'Silver' | 'Diamond' | 'Artificial';
+export type Category = 'Necklace' | 'Ring' | 'Earrings' | 'Bangles' | 'Bridal Set';
+
+export interface Product {
+  id: string;
+  name: string;
+  description: string;
+  price: number;
+  originalPrice?: number;
+  metal: MetalType;
+  category: Category;
+  weight: string;
+  purity: string;
+  images: string[];
+  stock: number;
+  isNewArrival?: boolean;
+  isBestSeller?: boolean;
+}
+
+export const mockProducts: Product[] = [
+  {
+    id: "p1",
+    name: "22K Gold Antique Floral Choker",
+    description: "An elegant antique floral choker crafted in 22K yellow gold. Perfect for bridal and festive occasions.",
+    price: 185000,
+    originalPrice: 195000,
+    metal: "Gold",
+    category: "Necklace",
+    weight: "25g",
+    purity: "22K",
+    images: ["https://images.pexels.com/photos/1458867/pexels-photo-1458867.jpeg?auto=compress&cs=tinysrgb&w=800"],
+    stock: 2,
+    isBestSeller: true,
+  },
+  {
+    id: "p2",
+    name: "Diamond Solitaire Engagement Ring",
+    description: "Classic 1 Carat diamond solitaire ring set in 18K white gold.",
+    price: 245000,
+    metal: "Diamond",
+    category: "Ring",
+    weight: "4g",
+    purity: "18K Gold, VVS1",
+    images: ["https://images.pexels.com/photos/177332/pexels-photo-177332.jpeg?auto=compress&cs=tinysrgb&w=800"],
+    stock: 5,
+    isNewArrival: true,
+  },
+  {
+    id: "p3",
+    name: "Silver Kundan Drop Earrings",
+    description: "Handcrafted 92.5 silver earrings with traditional Kundan settings.",
+    price: 4500,
+    originalPrice: 5500,
+    metal: "Silver",
+    category: "Earrings",
+    weight: "12g",
+    purity: "92.5 Silver",
+    images: ["https://images.pexels.com/photos/1232931/pexels-photo-1232931.jpeg?auto=compress&cs=tinysrgb&w=800"],
+    stock: 12,
+  },
+  {
+    id: "p4",
+    name: "Temple Design Gold Bangles Set",
+    description: "Intricate temple design bangles in 22K gold, sold as a pair.",
+    price: 155000,
+    metal: "Gold",
+    category: "Bangles",
+    weight: "20g",
+    purity: "22K",
+    images: ["https://images.pexels.com/photos/2735970/pexels-photo-2735970.jpeg?auto=compress&cs=tinysrgb&w=800"],
+    stock: 3,
+    isBestSeller: true,
+  },
+  {
+    id: "p5",
+    name: "Premium AD Bridal Necklace Set",
+    description: "High-quality American Diamond bridal set consisting of necklace and earrings.",
+    price: 12000,
+    metal: "Artificial",
+    category: "Bridal Set",
+    weight: "150g",
+    purity: "Brass/Copper Alloy",
+    images: ["https://images.pexels.com/photos/265906/pexels-photo-265906.jpeg?auto=compress&cs=tinysrgb&w=800"],
+    stock: 8,
+    isNewArrival: true,
+  },
+  {
+    id: "p6",
+    name: "18K Rose Gold Diamond Pendant",
+    description: "Minimalist rose gold pendant studded with real diamonds.",
+    price: 45000,
+    originalPrice: 50000,
+    metal: "Diamond",
+    category: "Necklace",
+    weight: "5g",
+    purity: "18K",
+    images: ["https://images.pexels.com/photos/248077/pexels-photo-248077.jpeg?auto=compress&cs=tinysrgb&w=800"],
+    stock: 4,
+  },
+  {
+    id: "p7",
+    name: "Platinum Band Ring with Sapphires",
+    description: "A sleek platinum band featuring alternating diamonds and sapphires.",
+    price: 85000,
+    metal: "Diamond",
+    category: "Ring",
+    weight: "6g",
+    purity: "PT950",
+    images: ["https://images.pexels.com/photos/177332/pexels-photo-177332.jpeg?auto=compress&cs=tinysrgb&w=800"],
+    stock: 7,
+  },
+  {
+    id: "p8",
+    name: "Classic Emerald Choker Set",
+    description: "Extravagant gold choker deeply set with emeralds and rubies, perfect for weddings.",
+    price: 320000,
+    originalPrice: 350000,
+    metal: "Gold",
+    category: "Bridal Set",
+    weight: "45g",
+    purity: "22K, Precious Stones",
+    images: ["https://images.pexels.com/photos/1458867/pexels-photo-1458867.jpeg?auto=compress&cs=tinysrgb&w=800"],
+    stock: 1,
+    isBestSeller: true,
+  },
+  {
+    id: "p9",
+    name: "Everyday Silver Hoop Earrings",
+    description: "Lightweight and stylish 92.5 silver hoops for everyday wear.",
+    price: 2500,
+    metal: "Silver",
+    category: "Earrings",
+    weight: "8g",
+    purity: "92.5 Silver",
+    images: ["https://images.pexels.com/photos/1232931/pexels-photo-1232931.jpeg?auto=compress&cs=tinysrgb&w=800"],
+    stock: 20,
+    isNewArrival: true,
+  },
+  {
+    id: "p10",
+    name: "Polki Diamond Studs",
+    description: "Traditional uncut polki diamonds set in 18K yellow gold studs.",
+    price: 65000,
+    metal: "Diamond",
+    category: "Earrings",
+    weight: "5g",
+    purity: "18K",
+    images: ["https://images.pexels.com/photos/248077/pexels-photo-248077.jpeg?auto=compress&cs=tinysrgb&w=800"],
+    stock: 5,
+  },
+  {
+    id: "p11",
+    name: "Designer CZ Rose Gold Bangles",
+    description: "A pair of contemporary bangles embedded with premium cubic zirconia.",
+    price: 8500,
+    metal: "Artificial",
+    category: "Bangles",
+    weight: "35g",
+    purity: "Copper Alloy",
+    images: ["https://images.pexels.com/photos/2735970/pexels-photo-2735970.jpeg?auto=compress&cs=tinysrgb&w=800"],
+    stock: 15,
+  },
+  {
+    id: "p12",
+    name: "Heritage Lakshmi Gold Coin Necklace",
+    description: "A magnificent temple jewelry piece featuring authentic gold coins and Goddess Lakshmi motif.",
+    price: 450000,
+    metal: "Gold",
+    category: "Necklace",
+    weight: "65g",
+    purity: "22K Gold",
+    images: ["https://images.pexels.com/photos/265906/pexels-photo-265906.jpeg?auto=compress&cs=tinysrgb&w=800"],
+    stock: 2,
+    isBestSeller: true,
+  }
+];
